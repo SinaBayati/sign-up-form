@@ -14,35 +14,44 @@
     <h1 class="logo">ODIN</h1>
   </header>
   <form action="https://httpbin.org/post" method="post">
-    <h2>This is not a real online service! You know you need something like this in your life to help you realize your
-      deepest dreams. Sign up <em>now</em> to get started.</h2>
-    <h3>You <em>know</em> you want to.</h3>
+    <div class="form-header">
+      <h2>This is not a real online service! You know you need something like this in your life to help you realize your
+        deepest dreams. Sign up <em>now</em> to get started.</h2>
+      <h3>You <em>know</em> you want to.</h3>
+    </div>
     <fieldset>
       <legend>Let's do this!</legend>
       <ul>
         <li>
           <label for="first-name">First name</label>
-          <input type="text" id="first-name" name="first_name" value="Thor">
+          <input type="text" id="first-name" name="first_name" value="Thor" required>
+          <span></span>
         </li>
         <li>
           <label for="last-name">Last name</label>
-          <input type="text" id="last-name" name="last_name" value="Odinson">
+          <input type="text" id="last-name" name="last_name" value="Odinson" required>
+          <span></span>
         </li>
         <li>
           <label for="email">Email</label>
-          <input type="email" id="email" name="email">
+          <input type="email" id="email" name="email" required>
+          <span></span>
         </li>
         <li>
           <label for="phone-number">Phone number</label>
           <input type="tel" id="phone-number" name="phone_number">
+          <span></span>
         </li>
         <li>
           <label for="password">Password</label>
-          <input type="password" id="password" name="password">
+          <input type="password" id="password" name="password" minlength="8" maxlength="30" required>
+          <span></span>
         </li>
         <li>
           <label for="confirm-password">Confirm password</label>
-          <input type="password" id="confirm-password" name="password_confirmation">
+          <input type="password" id="confirm-password" name="password_confirmation" minlength="8" maxlength="30"
+            required>
+          <span></span>
         </li>
       </ul>
     </fieldset>

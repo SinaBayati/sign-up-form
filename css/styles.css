@@ -1,0 +1,154 @@
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --c-white: #e7e7e7;
+}
+
+body{
+  background: url(../img/Russia\ Taiga\ Forest\ Tree\ Sun\ Rays\ Dawn\ HD\ Wallpaper.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: "norse";
+  src: url(../font/Norse-Bold.otf),format("otf");
+  font-style: normal;
+  font-weight: bold;
+}
+
+header{
+  background-color: rgba(0, 0, 0, 0.562);
+  width: 50%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex: 2;
+}
+
+header > img{
+  width: 80px;
+  height: auto;
+}
+
+h1.logo{
+  font-family: "norse", monospace;
+  color: var(--c-white,white);
+  font-size: 70px;
+}
+
+form{
+  flex: 3;
+  box-sizing: border-box;
+  background-color: var(--c-white,white);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form-header{
+  margin: 30px;
+  line-height: 35px;
+}
+
+.form-header > h2{
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.form-header > h3{
+  font-size: 20px;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul li{
+  width: 300px;
+}
+
+li label{
+  display: block;
+}
+
+li input{
+  box-sizing: border-box;
+  width: 80%;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #ccc;
+  outline: none;
+}
+
+li input:invalid{
+  border-color: red;
+}
+
+li input + span{
+  position: relative;
+}
+
+li input:invalid + span::after{
+  position: absolute;
+  content: "Invalid input";
+  color: red;
+  font-size: 15px;
+  width: 100px;
+  top: 30px;
+  left: -80px;
+}
+
+li input:valid{
+  border-color: green;
+}
+
+li input:focus{
+  border-color: royalblue;
+}
+fieldset{
+  background-color: #ffffff;
+  padding: 40px 40px 20px;
+  position: relative;
+  border: none;
+  box-shadow: 3px 3px 5px #ccc;
+}
+
+legend{
+  position: absolute;
+  top: 10px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+button[type="submit"]{
+  background-color: #304b30;
+  padding: 10px 50px;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  margin: 50px 0 20px 50px;
+  box-shadow: 0 3px 5px #333;
+  cursor: pointer;
+}
+
+button + p{
+  margin-left: 50px;
+}
+
+p a{
+  text-decoration: none;
+  color: #304b30;
+}
